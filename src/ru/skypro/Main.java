@@ -1,5 +1,8 @@
 package ru.skypro;
 
+import java.time.LocalDate;
+import java.time.Year;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -8,6 +11,9 @@ public class Main {
         while (a <= 10) {
             System.out.println(a++);
         }
+        System.out.println();
+
+
         for (int i = 10; i > 0; i--) {
             System.out.println(i);
         }
@@ -22,8 +28,8 @@ public class Main {
         int currentYear = 2022;
         int start = currentYear - 200;
         int finish = currentYear + 100;
-        for (int i = start;i <= finish; i+=79) {
-            System.out.println(i);
+        for (int year = start; year <= finish; year+=79) {
+            System.out.println(year);
         }
     }
 }
