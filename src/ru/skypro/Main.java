@@ -22,7 +22,7 @@ public class Main {
         int currentYear = 2022;
         int start = currentYear - 200;
         int finish = currentYear + 100;
-        for (int i = start ;i <= finish; i+=79) {
+        for (int i = start;i <= finish; i+=79) {
             System.out.println(i);
         }
     }
