@@ -19,12 +19,9 @@ public class Main {
             }
         }
         // Задача №3
-        int arrivalTime = 79;
-        int startYear = 1822;
         int lastYear = 2122;
-        while (startYear <= lastYear) {
-            startYear = startYear + arrivalTime;
-            System.out.println (startYear);
+        for (int i = 0;i <= lastYear; i = i + 79) {
+            System.out.println(i);
         }
     }
 }
