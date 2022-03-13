@@ -28,7 +28,7 @@ public class Main {
         System.out.println();
 
         // Задача №3
-        int currentYear = LocalDate.now().getYear();
+        int currentYear = 2022;
         int start = currentYear - 200;
         int finish = currentYear + 100;
         for (int year = start; year <= finish; year++) {
