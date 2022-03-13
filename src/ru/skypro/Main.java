@@ -20,8 +20,8 @@ public class Main {
         System.out.println();
 
         // Задача №2
-        for (int dayNumber = 4; dayNumber <= 31; dayNumber++) {
-            if (dayNumber % 7 == 4) {
+        for (int dayNumber = 4; dayNumber <= 31; dayNumber+=7) {
+            {
                 System.out.println("Сегодня пятница " + dayNumber + "-е число. Необходимо подготовить отчет.");
             }
         }
