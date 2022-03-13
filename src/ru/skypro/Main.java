@@ -9,7 +9,7 @@ public class Main {
         // Задача №1
         int a = 0;
         while (a < 10) {
-            System.out.print(++ a + " ");
+            System.out.print(++a + " ");
         }
         System.out.println();
 
@@ -20,7 +20,7 @@ public class Main {
         System.out.println();
 
         // Задача №2
-        for (int dayNumber = 4; dayNumber <= 31; dayNumber+=7) {
+        for (int dayNumber = 4; dayNumber <= 31; dayNumber += 7) {
             {
                 System.out.println("Сегодня пятница " + dayNumber + "-е число. Необходимо подготовить отчет.");
             }
@@ -28,11 +28,13 @@ public class Main {
         System.out.println();
 
         // Задача №3
-        int currentYear = 2022;
+        int currentYear = LocalDate.now().getYear();
         int start = currentYear - 200;
         int finish = currentYear + 100;
-        for (int year = start; year <= finish; year+=79) {
-            System.out.println(year);
+        for (int year = start; year <= finish; year++) {
+            if (year % 79 == 0) {
+                System.out.println(year);
+            }
         }
     }
 }
