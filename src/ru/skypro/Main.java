@@ -19,8 +19,10 @@ public class Main {
             }
         }
         // Задача №3
-        int lastYear = 2122;
-        for (int i = 0;i <= lastYear; i = i + 79) {
+        int currentYear = 2022;
+        int start = currentYear - 200;
+        int finish = currentYear + 100;
+        for (int i = start ;i <= finish; i+=79) {
             System.out.println(i);
         }
     }
